@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Input Page</title>
+
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+<style type="text/css">
+	.footer {
+    position:fixed;
+    bottom:0;
+}
+</style>
+
+
+<div class="container">
+<h2>Get Nearby cities</h2><br>
+	<form action="{{ url_for('search')}}" method="post" class= "form-horizontal">
+		
+		<div class="form-group">
+
+			<label class="control-label col-sm-2" for="latitude">Latitude : </label>
+	      	<div class="col-sm-4"> 
+			<input type="text" class="form-control" name="lat" id="latitude" placeholder="Enter latitude" required></input>
+			</div>
+		</div>
+
+		<div class="form-group">
+
+			<label class="control-label col-sm-2" for="longitude">Longitude : </label>
+	      	<div class="col-sm-4"> 
+			<input type="text" class="form-control" name="lon" id="longitude" placeholder="Enter longitude" required></input>
+			</div>
+		</div>
+
+		<div class="form-group">
+      		<div class="col-sm-offset-2 col-sm-4">
+        	<button type="submit" class="btn btn-success">Search</button>
+      		</div>
+    	</div>
+		
+	</form>
+
+	<footer class="footer">
+		Developed by :<br>
+		Prince Chauhan<br>
+		3rd year Undergraduate<br>
+		Dept. of CSE, Jaypee university of Information Technology, Solan<br>
+		Email : princechauhan800@gmail.com<br>
+		Phone : 9805054947<br>
+		<div class="w3l-social">
+			<p>Connect to me on  
+  			<a href="https://in.linkedin.com/in/princechauhan1" target="_blank"><i class="fa fa-linkedin fa-lg"> Linkedin</i></a></p>
+		</div>
+
+	</footer>
+
+</div>
+</body>
+</html>
