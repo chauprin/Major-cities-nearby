@@ -1,1 +1,1 @@
-web: gunicorn gettingstarted.wsgi
+web: gunicorn Major-cities-nearby.wsgi --log-file -
