@@ -1,1 +1,1 @@
-web: gunicorn home
+web: gunicorn home.py
