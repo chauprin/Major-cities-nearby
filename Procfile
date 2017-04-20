@@ -1,1 +1,1 @@
-web: gunicorn Major-cities-nearby:home
+web: python home.py
